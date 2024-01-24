@@ -1,0 +1,320 @@
+@media all and (max-width:575px) {
+    .logo_res {
+        width: 100%;
+        margin: 0px auto;
+
+    }
+
+    .footer-logo img {
+        width: 160px;
+    }
+
+    .marginRight {
+        margin-left: 0 !important;
+    }
+
+    .paddingCustome {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media all and (min-width:576px) and (max-width:991px) {
+    .logo_res {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .footer-logo img {
+        width: 100%;
+    }
+
+}
+
+@media all and (min-width:992px) {
+    .logo_res {
+        width: 960px;
+        margin: 0px auto;
+    }
+
+    .footer-logo img {
+        width: 100%;
+    }
+}
+
+body {
+    background-color: #f5f7fb;
+    /* background-color: gray; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------NAVI-------------------------------------------------------*/
+
+.nav {
+    height: 41px;
+    background-color: #24695c;
+}
+
+.nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-right: 0px;
+}
+
+.nav ul li {
+    height: 100%;
+}
+
+.nav ul li a {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    line-height: 41px;
+    font-size: 13px;
+}
+
+.nav ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+}
+
+.nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform: translateY(-3px);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------SLIDER------------------------------------------------------*/
+
+.container-slider {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px auto;
+    height: 290px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-slider img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 500ms ease 0s;
+}
+
+.slider-icon {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.3);
+    left: 15px;
+    top: 50%;
+    margin-top: -15px;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-icon:first-of-type {
+    right: 15px;
+}
+
+.slider-icon:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------MAIN-------------------------------------------------------*/
+
+.main-h2 {
+    margin: 30px auto 10px auto;
+    background-color: #17433b;
+    border-radius: 10px;
+    color: white;
+    font-size: 16pt;
+    padding: 15px 10px;
+}
+
+.main-h2 div {
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.main-pz {
+    text-align: justify;
+    font-size: 11pt;
+    margin-bottom: 1rem;
+}
+
+.main-h6 {
+    border-radius: 10px;
+    margin: 30px auto 10px auto;
+    color: white;
+    padding: 15px 10px;
+    font-size: 11pt;
+    background-color: #2c323f;
+}
+
+.widget-button a {
+    display: block;
+    background-color: #24695c;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.widget-button a:hover {
+    background-color: #17433b;
+}
+
+.card {
+    border-top: 3px solid #24695c;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.input1 {
+    display: block;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    height: 35px;
+    padding-right: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    transition: all 200ms ease 0s;
+}
+
+.input1:focus {
+    color: #212529;
+    background-color: white;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    outline: 0;
+}
+
+.enterbutton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24695c;
+    height: 35px;
+    color: white;
+    margin-top: 10px;
+    border: 0 solid #24695c;
+    border-radius: 5px;
+}
+
+.card-body ul {
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+
+.card-body ul li {
+    list-style-type: square;
+    margin: 0 0 5px;
+}
+
+.card-body ul li a {
+    color: black;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.card-body ul li a:hover {
+    color: #24695c;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------COMPANYS-----------------------------------------------------*/
+/*******************************************************NONE********************************************************/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------FOOTER------------------------------------------------------*/
+
+.border-color-custome {
+    border-color: rgb(216, 217, 218) !important;
+    margin-top: 10px;
+}
+
+.footer-logo img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+
+.footer-soton {
+    font-size: 10pt;
+    padding: 10px;
+}
+
+.footer-soton p {
+    margin-bottom: 4px;
+    color: #24695c;
+    font-weight: bold;
+}
+
+.footer-soton ul {
+    padding-right: 0px;
+}
+
+.footer-soton ul li {
+    margin-bottom: 2px;
+
+}
+
+.footer-soton ul li a {
+    color: black;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+.footer-soton ul li a:hover {
+    background-color: #24695c;
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------END-------------------------------------------------------*/
